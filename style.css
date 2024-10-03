@@ -1,0 +1,68 @@
+h1 {
+    color: green;
+    font-style: italic;
+    background-color: aquamarine;
+    text-align: center;
+}
+.intro {
+    text-align: center;
+    color: green;
+    font-style: oblique;
+}
+
+.center {
+    width: 400px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.US {
+    font-size: large;
+    text-align: center;
+    color: green;
+}
+
+
+.container {
+    display: flex;
+    
+  }
+  .image {
+    flex: 1; 
+    padding: 5px;
+    width: 200px;
+    height: auto;
+  }
+
+.list {
+    text-align: center;
+    color: lightgreen;
+
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    position: relative;
+}
+a::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #000;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+html {
+    scroll-behavior: smooth;
+  }
